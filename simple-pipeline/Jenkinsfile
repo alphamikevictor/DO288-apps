@@ -26,7 +26,9 @@ pipeline {
 
         // TODO: ADD A STAGE THAT SAYS HELLO
         stage('stage 2'){
-           echo "hello"
+           steps{
+               echo "hello"
+           }
         }
 
         // TODO: ADD AN APPROVAL STAGE
