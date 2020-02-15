@@ -135,7 +135,7 @@ pipeline {
 
                 echo '### Creating a new app in Staging ###'
                 sh'''
-			oc ${STAGE_PROJECT}
+			oc project ${STAGE_PROJECT}
 			oc new-app -i ${APP_NAME}:stage --name ${APP_NAME}
 			oc expose svc/${APP_NAME}
 		'''
