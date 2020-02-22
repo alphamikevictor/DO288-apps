@@ -28,9 +28,6 @@ server.listen(port, function (err) {
 });
 
 
-/* 
 process.on('uncaughtException', function (err) {
     console.error(JSON.parse(JSON.stringify(err, ['stack', 'message', 'inner'], 2)))
 });
-*/    
-
